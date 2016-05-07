@@ -1,0 +1,9 @@
+FROM nginx:1.9.15
+MAINTAINER mesaque.silva@madlabbrazil.com
+COPY dockerfiles/nginx/mlp.madlabbrazil.com /etc/nginx/conf.d/default.conf
+COPY dockerfiles/nginx/php.loc /etc/nginx/conf.d/php.loc
+COPY dockerfiles/nginx/set_var.sh /set_var.sh
+COPY dockerfiles/wordpress/wp-config.php /www/wp-config.php
+RUN apt-get update && apt-get install -y --force-yes vim wget tar
+EXPOSE 80
+ENV TERM xterm
