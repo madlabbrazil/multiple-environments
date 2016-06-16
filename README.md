@@ -42,7 +42,11 @@ docker exec mlp-nginx /set_var.sh &&
 docker restart mlp-nginx
 ```
 
+Default php version is 5.6, possible values are:
+```php
 ?phpversion=hhvm
-
+?phpversion=7
+?phpversion=5
+```
 To see if you container are build correctly run this command `docker ps`
 
