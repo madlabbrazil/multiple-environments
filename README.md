@@ -48,5 +48,6 @@ Default php version is 5.6, possible values are:
 ?phpversion=7
 ?phpversion=5
 ```
+Ex: http://mlp.madlabbrazil.com/info.php?phpversion=5
 To see if you container are build correctly run this command `docker ps`
 
